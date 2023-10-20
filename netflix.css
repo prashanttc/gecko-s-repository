@@ -44,18 +44,21 @@ nav button {
     margin: 10px;
     border-radius: 4px;
 }
-.lan-btn{
-background: transparent;
-border: 1px solid white;
-display: inline-flex;
-padding: 7px 10px;
-align-items: center;
+
+.lan-btn {
+    background: transparent;
+    border: 1px solid white;
+    display: inline-flex;
+    padding: 7px 10px;
+    align-items: center;
 }
-.lan-btn img{
+
+.lan-btn img {
     width: 10px;
-margin-left: 10px;
+    margin-left: 10px;
 }
-.header-content{
+
+.header-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,30 +66,33 @@ margin-left: 10px;
     text-align: center;
 
     margin-bottom: 140px;
-    
+
 }
-.header-content h1{
+
+.header-content h1 {
     font-family: sans-serif;
-    font-weight: 1000;  
+    font-weight: 1000;
     font-size: 45px;
-   width: 1220px;
+    width: 1220px;
     line-height: 70px;
     word-spacing: -5px;
- 
+
 }
-.header-content h3{
-    font-size:27px;
+
+.header-content h3 {
+    font-size: 27px;
     font-weight: 400;
     margin-bottom: 30px;
     margin-top: 20px;
 }
-.header-content p{
+
+.header-content p {
     font-size: large;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.email input{
+.email input {
     width: 350px;
     padding: 15px 15px;
     font-size: larger;
@@ -96,12 +102,13 @@ margin-left: 10px;
     align-items: center;
     margin-right: 5px;
 }
-.email button{
+
+.email button {
     width: 170px;
     font-weight: 600;
     cursor: pointer;
     font-size: 21px;
-    text-align:center;
+    text-align: center;
     padding: 15px 15px;
     background-color: #db0001;
     color: #fff;
@@ -109,35 +116,164 @@ margin-left: 10px;
     outline: 0px;
     border-radius: 4px;
 }
-.feature{
+
+.feature {
+    border-top: 6px solid#333;
     font-size: 22px;
     padding: 50px 12%;
 }
-.row{
+
+.row {
     display: flex;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 0px;
 }
-.text-col{
+
+.text-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
-.img-col{
+
+.img-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
-.img-col img{
+
+.img-col img {
     margin: auto;
     width: 90%;
-    display: block ;
+    display: block;
 }
-.free-lines{
-    background-color: hsl(0, 0%, 21%);
-    color: #000000;
-    border-radius: 5px;
-    height: 5px;
+
+
+.faq {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 6px solid#333;
+
+}
+
+.faq h1 {
+    margin-top: 25px;
+    font-weight: bolder;
+    font-size:50px;
+    margin-bottom: -40px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.accordion li {
+    padding: 5px;
+    list-style: none;
     width: 100%;
 }
-   
+
+.accordion li label {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 2px;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+}
+.accordion li label:hover{
+    background-color: #7473739d;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .email {
+    max-height: 600px;
+    margin: 20px auto 60px;
+
+
+
+}
+
+.faq .small {
+    font-size: 13px;
+    margin-bottom: 4px;
+    margin-left: -100px;
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid#333;
+    color: #777;
+}
+
+.footer h2 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+ flex-grow: 1;
+  flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    text-decoration: underline;
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .lan-btn {
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.cpr {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
